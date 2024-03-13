@@ -36,7 +36,7 @@ const getApp = async () => {
   app.use('/api/v1', [authMiddleware], privateRouter);
   app.use((_, res) => {
     // Todo: logging!!
-    console.error('NOT FOUND');
+    console.error('NO SOURCE');
     errorResponse({ res, type: responseType });
     return;
   });
